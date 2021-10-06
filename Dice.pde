@@ -4,6 +4,7 @@ void setup()
 {
   background(153, 209, 255);
   size(420,500);
+  frameRate(60);
   noLoop();
 }
 void mousePressed(){ //rolls when click with no loop
