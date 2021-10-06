@@ -17,6 +17,7 @@ void keyPressed(){ //sets up loop and no loop
     loop = true;
   } else {
     noLoop();
+    frameRate(60);
     loop = false;
   }
 }
