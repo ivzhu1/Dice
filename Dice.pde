@@ -1,5 +1,5 @@
 Die bob;
-boolean loop = false;
+boolean repeat = false;
 void setup()
 {
   background(153, 209, 255);
@@ -8,18 +8,18 @@ void setup()
   noLoop();
 }
 void mousePressed(){ //rolls when click with no loop
-  if (loop == false)
+  if (repeat == false)
     redraw();
 }
 void keyPressed(){ //sets up loop and no loop
-  if (loop == false){
+  if (repeat == false){
     loop();
     frameRate(1.8);
-    loop = true;
+    repeat = true;
   } else {
     noLoop();
     frameRate(60);
-    loop = false;
+    repeat = false;
   }
 }
 
